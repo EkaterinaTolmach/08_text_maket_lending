@@ -1,0 +1,100 @@
+@font-face{
+    font-family: 'Muller Bold';
+    src: url('../fonts/MullerBold.woff'), url('../fonts/MullerBold.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Muller Extra Bold';
+    src: url('../fonts/MullerExtraBold.woff'), url('../fonts/MullerExtraBold.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Muller Heavy';
+    src: url('../fonts/MullerHeavy.woff'), url('../fonts/MullerHeavy.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Muller Medium';
+    src: url('../fonts/MullerMedium.woff'), url('../fonts/MullerMedium.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.woff'), url('../fonts/OpenSans.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Open Sans Extrabold';
+    src: url('../fonts/OpenSansExtrabold.woff'), url('../fonts/OpenSansExtrabold.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/OpenSansSemibold.woff'), url('../fonts/OpenSansSemibold.woff2');
+    font-weight: 400;
+}
+/*-----------------------Начало "Общие стили"------------------------*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+button, input, textarea {
+    outline: none;
+    border: none;
+}
+.template-width {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+* {
+    /*outline: 1px solid red;*/
+}
+
+.clear-fix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', arial, sans-serif;
+    background-color: #353f46;
+    font-size: 16px;
+}
+.section-title {
+    color: #7f38bd;
+    font-family: "Muller Bold", arial, sans-serif;
+    font-size: 30px;
+}
+/*-----------------------Конец "Общие стили"------------------------*/
