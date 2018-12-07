@@ -164,10 +164,10 @@ body {
 .top-nav__item:last-child .top-nav__link::after {
     right: -11px;
 }
-.top-nav__link:hover .top-nav__item:first-child .top-nav__link::after {
+.top-nav__item:first-child .top-nav__link:hover::after {
     width: 94%;
 }
-.top-nav__link:hover .top-nav__item:last-child .top-nav__link::after {
+.top-nav__item:last-child .top-nav__link:hover::after {
     width: 94%;
 }
 .top-nav__link:hover::after{
@@ -200,5 +200,10 @@ body {
     letter-spacing: 0.55px;
     line-height: 30px;
     text-align: center;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.call__order:hover {
+    color: #7f38bd;
+    background-color: #ffffff;
 }
 /*-----------------------Конец блока "Header"------------------------*/
