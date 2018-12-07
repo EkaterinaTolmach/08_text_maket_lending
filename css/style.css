@@ -89,7 +89,8 @@ button, input, textarea {
 body {
     margin: 0;
     font-family: 'Open Sans', arial, sans-serif;
-    background-color: #7f38bd;
+    /*background-color: #7f38bd;*/
+    background-color: #fb0275;
     font-size: 16px;
 }
 .section-title {
@@ -102,6 +103,10 @@ body {
 /*-----------------------Начало блока "Header"------------------------*/
 .header {
     width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 .header__wrap {
     padding: 61px 15px 50px;
@@ -207,3 +212,82 @@ body {
     background-color: #ffffff;
 }
 /*-----------------------Конец блока "Header"------------------------*/
+
+/*-----------------------Начало блока "main"------------------------*/
+
+/*-----------------------Начало блока "banner"------------------------*/
+.banner {
+    max-width: 1920px;
+    background: url("../img/bckg_01.jpg") center center no-repeat;
+}
+.banner__wrap {
+    padding: 182px 0 206px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banner__img {
+    margin-left: -96px;
+}
+.banner__descr {
+    padding-top: 36px;
+    padding-right: 49px;
+}
+.banner__title {
+    color: #ffffff;
+    font-family: "Muller Extra Bold", arial, sans-serif;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 39px;
+    line-height: 75px;
+}
+.banner__text {
+    color: #ffffff;
+    font-family: "Muller Medium", arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 79px;
+}
+.banner__order-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.banner__order-link {
+    width: 247px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #fb0275;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 48px;
+    text-align: center;
+    margin-right: 29px;
+    transition: background-color 0.3s ease-in-out;
+}
+.banner__order-link:hover {
+    /*background-color: #ca025f;*/
+    /*background-color: #e60063;*/
+    background-color: #db005f;
+}
+.banner__order-link:active {
+    /*background-color: #ca025f;*/
+    background-color: #db005f;
+}
+.banner__order-region {
+    color: #ffffff;
+    font-size: 1rem;
+}
+/*-----------------------Конец блока "banner"------------------------*/
+
+/*-----------------------Конец блока "banner"------------------------*/
+
+/*-----------------------Конец блока "banner"------------------------*/
+
+/*-----------------------Конец блока "main"------------------------*/
