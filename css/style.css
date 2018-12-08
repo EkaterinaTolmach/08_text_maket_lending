@@ -1,0 +1,360 @@
+@font-face{
+    font-family: 'Muller Bold';
+    src: url('../fonts/MullerBold.woff'), url('../fonts/MullerBold.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Muller Extra Bold';
+    src: url('../fonts/MullerExtraBold.woff'), url('../fonts/MullerExtraBold.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Muller Heavy';
+    src: url('../fonts/MullerHeavy.woff'), url('../fonts/MullerHeavy.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Muller Medium';
+    src: url('../fonts/MullerMedium.woff'), url('../fonts/MullerMedium.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.woff'), url('../fonts/OpenSans.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Open Sans - Extra Bold';
+    src: url('../fonts/OpenSansExtrabold.woff'), url('../fonts/OpenSansExtrabold.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/OpenSansSemibold.woff'), url('../fonts/OpenSansSemibold.woff2');
+    font-weight: 400;
+}
+/*-----------------------Начало "Общие стили"------------------------*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+button, input, textarea {
+    outline: none;
+    border: none;
+}
+.template-width {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+* {
+    /*outline: 1px solid red;*/
+}
+
+.clear-fix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+    /*background-color: #7f38bd;*/
+    background-color: #fb0275;
+    font-size: 16px;
+}
+.section-title {
+    color: #7f38bd;
+    font-family: "Muller Bold", arial, sans-serif;
+    font-size: 1.875rem;
+}
+.section__subtitle {
+    color: #383d52;
+    font-family: "Muller Medium", arial, sans-serif;
+    font-size: 2rem;
+}
+/*-----------------------Конец "Общие стили"------------------------*/
+
+/*--------------------------------------Начало блока "Header"------------------------*/
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header__wrap {
+    padding: 61px 15px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header__logo {
+    color: #ffffff;
+    font-family: "Open Sans - Extra Bold", arial, sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin-right: 11.9%;
+
+}
+.header__menu {
+    margin-right: 5.55%;
+}
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 484px;
+}
+.top-nav__link {
+    color: #ffffff;
+    font-family: "Open Sans - Semi Bold", arial, sans-serif;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.65px;
+    padding: 15px 10px;
+}
+.top-nav__item {
+    position: relative;
+}
+.top-nav__item:first-child .top-nav__link {
+    padding: 15px 10px 15px 0;
+}
+.top-nav__item:last-child .top-nav__link {
+    padding: 15px 0 15px 10px;
+}
+.top-nav__link::after {
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+.top-nav__item:first-child .top-nav__link::after {
+    left: -10px;
+}
+.top-nav__item:last-child .top-nav__link::after {
+    right: -11px;
+}
+.top-nav__item:first-child .top-nav__link:hover::after {
+    width: 94%;
+}
+.top-nav__item:last-child .top-nav__link:hover::after {
+    width: 94%;
+}
+.top-nav__link:hover::after{
+    width: 81%;
+}
+.call {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 350px;
+}
+.call__link {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+.call__order {
+    width: 165px;
+    height: 34px;
+    border-radius: 17px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: "Open Sans - Extra Bold", arial, sans-serif;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.55px;
+    line-height: 30px;
+    text-align: center;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.call__order:hover {
+    color: #7f38bd;
+    background-color: #ffffff;
+}
+/*----------------------------------------Конец блока "Header"------------------------*/
+
+/*----------------------------------------Начало блока "main"--------------------------------------------*/
+
+/*-----------------------Начало блока "banner"------------------------*/
+.banner {
+    max-width: 1920px;
+    background: url("../img/bckg_01.jpg") center center no-repeat;
+}
+.banner__wrap {
+    padding: 182px 0 206px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banner__img {
+    margin-left: -96px;
+    background-image: radial-gradient(circle closest-side at 60% 60%, #c99ef4, transparent);
+}
+.banner__descr {
+    padding-top: 36px;
+    padding-right: 49px;
+}
+.banner__title {
+    color: #ffffff;
+    font-family: "Muller Extra Bold", arial, sans-serif;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 39px;
+    line-height: 75px;
+}
+.banner__text {
+    color: #ffffff;
+    font-family: "Muller Medium", arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 79px;
+}
+.banner__order-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.banner__order-link {
+    width: 247px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #fb0275;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 48px;
+    text-align: center;
+    margin-right: 29px;
+    transition: background-color 0.3s ease-in-out;
+}
+.banner__order-link:hover {
+    /*background-color: #ca025f;*/
+    /*background-color: #e60063;*/
+    background-color: #db005f;
+}
+.banner__order-link:active {
+    /*background-color: #ca025f;*/
+    background-color: #db005f;
+}
+.banner__order-region {
+    color: #ffffff;
+    font-size: 1rem;
+}
+/*-----------------------Конец блока "banner"------------------------*/
+
+/*-----------------------Начало блока "about"------------------------*/
+.about {
+    width: 100%;
+    background-color: #ffffff;
+}
+.about__wrap {
+    padding: 108px 15px 147px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.stages {
+    width: 535px;
+}
+.about__descr {
+    max-width: 513px;
+}
+.stage__img {
+    width: 106px;
+    height: 106px;
+    background-color: #f0e2ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stage__one svg {
+    width: 63px;
+    height: 54px;
+}
+.stage__two svg {
+    width: 58px;
+    height: 49px;
+    transform: rotateZ(-45deg);
+}
+.stage__three svg {
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+.stage__three .stage__img::after {
+    display: block;
+    position: absolute;
+    content: "XXL";
+    font-family: "Open Sans - Extra Bold", arial, sans-serif;
+    color: #ffffff;
+    font-size: 0.5625rem;
+    top: 32px;
+    left: 55px;
+}
+.stage__four svg {
+    width: 71px;
+    height: 71px;
+}
+.stage__descr {
+    color: #5e606a;
+    font-size: 0.8125rem;
+    line-height: 18px;
+}
+/*-----------------------Конец блока "about"------------------------*/
+
+/*----------------------------------------------Конец блока "main"-------------------------------------*/
