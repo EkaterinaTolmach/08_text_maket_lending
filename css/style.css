@@ -505,4 +505,42 @@ body {
 }
 /*-----------------------Конец блока "about"------------------------*/
 
+/*-----------------------Начало блока "services"------------------------*/
+
+/*-----------------------Конец блока "services"------------------------*/
+.services {
+    width: 100%;
+    background-color: #faf8fb;
+}
+.services__wrap {
+    padding: 103px 15px 128px;
+}
+.services__title {
+    margin-bottom: 70px;
+}
+.outside-print {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.outside-print__list {
+    color: #5e606a;
+    font-size: 0.875rem;
+    line-height: 24px;
+}
+.outside-print__list-item {
+    padding-left: 10px;
+    position: relative;
+}
+.outside-print__list-item::before {
+    display: inline-block;
+    content: ".";
+    font-size: 1.5rem;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
 /*----------------------------------------------Конец блока "main"-------------------------------------*/
