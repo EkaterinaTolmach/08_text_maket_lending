@@ -114,7 +114,7 @@ body {
     left: 0;
 }
 .header__wrap {
-    padding: 61px 15px 50px;
+    padding: 55px 15px 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -146,9 +146,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.65px;
     padding: 15px 10px;
+    display: inline-block;
 }
 .top-nav__item {
     position: relative;
+    display: inline-block;
 }
 .top-nav__item:first-child .top-nav__link {
     padding: 15px 10px 15px 0;
@@ -162,7 +164,7 @@ body {
     background-color: #ffffff;
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -306,10 +308,55 @@ body {
     justify-content: space-between;
 }
 .stages {
-    width: 535px;
+    width: 536px;
+    height: 491px;
+    position: relative;
+    /*background: url("../img/pink_line.svg") 50% 35% no-repeat;*/
 }
-.about__descr {
-    max-width: 513px;
+/*.stages::after {*/
+    /*display: block;*/
+    /*content: "";*/
+    /*width: 316px;*/
+    /*height: 268px;*/
+    /*position: absolute;*/
+    /*top: 74px;*/
+    /*left: 107px;*/
+    /*background: url("../img/pink_line.svg") 50% 50% no-repeat;*/
+/*}*/
+.stage__lines {
+    position: absolute;
+    top: 66px;
+    left: 82px;
+    z-index: 100;
+}
+.stage__one {
+    max-width: 125px;
+    position: absolute;
+    top: 8px;
+    left: 181px;
+    z-index: 101;
+}
+.stage__two {
+    max-width: 164px;
+    position: absolute;
+    top: 147px;
+    right: 1px;
+    z-index: 101;
+
+}
+.stage__three {
+    max-width: 149px;
+    position: absolute;
+    top: 187px;
+    left: 0;
+    z-index: 101;
+}
+.stage__four {
+    max-width: 113px;
+    position: absolute;
+    bottom: 0;
+    left: 228px;
+    z-index: 101;
 }
 .stage__img {
     width: 106px;
@@ -320,8 +367,53 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 0 auto;
+    z-index: 101;
 }
-
+.stage__one::before {
+    display: block;
+    content: "";
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+.stage__two::before {
+    display: block;
+    content: "";
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 21px;
+}
+.stage__three::before {
+    display: block;
+    content: "";
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 23px;
+}
+.stage__four::before {
+    display: block;
+    content: "";
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: -9px;
+    left: 8px;
+}
 .stage__one svg {
     width: 63px;
     height: 54px;
@@ -334,7 +426,6 @@ body {
 .stage__three svg {
     width: 54px;
     height: 54px;
-    position: relative;
 }
 .stage__three .stage__img::after {
     display: block;
@@ -349,11 +440,68 @@ body {
 .stage__four svg {
     width: 71px;
     height: 71px;
+    margin-top: 11px;
+}
+.stage__four .stage__img {
+    align-items: flex-start;
+}
+.stage__two .stage__img::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../img/pink_arrow.svg") center center no-repeat;
+    position: absolute;
+    top: -6px;
+    left: 14px;
+}
+.stage__three .stage__img::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../img/pink_arrow.svg") center center no-repeat;
+    position: absolute;
+    top: 3px;
+    left: 87px;
+    transform: rotateZ(111deg);
+}
+.stage__four .stage__img::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../img/pink_arrow.svg") center center no-repeat;
+    position: absolute;
+    top: -2px;
+    left: 12px;
+    transform: rotateZ(11deg);
 }
 .stage__descr {
+    margin-top: 12px;
+    display: inline-block;
     color: #5e606a;
     font-size: 0.8125rem;
     line-height: 18px;
+    text-align: center;
+}
+.about__descr {
+    width: 520px;
+}
+.about__title {
+    margin-bottom: 63px;
+}
+.about__subtitle {
+    margin-bottom: 52px;
+}
+.about__text {
+    color: #5e606a;
+    font-size: 0.875rem;
+    line-height: 24px;
+}
+.about__text p:first-child,
+.about__text p:nth-child(2){
+    margin-bottom: 24px;
 }
 /*-----------------------Конец блока "about"------------------------*/
 
