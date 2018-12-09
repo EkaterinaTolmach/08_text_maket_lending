@@ -527,6 +527,21 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.outside-print::after {
+    display: block;
+    content: "1";
+    text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+    color: #faf8fb;
+    font-family: "Muller Heavy", arial, sans-serif;
+    font-size: 12.5rem;
+    position: absolute;
+    left: -80px;
+    top: -69px;
+    z-index: -1;
+
 }
 .outside-print__subtitle {
     margin-bottom: 49px;
