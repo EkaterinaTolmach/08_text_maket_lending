@@ -103,6 +103,28 @@ body {
     font-family: "Muller Medium", arial, sans-serif;
     font-size: 2rem;
 }
+.bright-btn {
+    height: 48px;
+    border-radius: 24px;
+    background-color: #fb0275;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s ease-in-out;
+}
+.bright-btn:hover {
+    /*background-color: #ca025f;*/
+    /*background-color: #e60063;*/
+    background-color: #db005f;
+}
+.bright-btn:active {
+    /*background-color: #ca025f;*/
+    background-color: #db005f;
+    position: relative;
+    top: 1px;
+}
 /*-----------------------Конец "Общие стили"------------------------*/
 
 /*--------------------------------------Начало блока "Header"------------------------*/
@@ -267,27 +289,9 @@ body {
 }
 .banner__order-link {
     width: 247px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: #fb0275;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
     line-height: 48px;
     text-align: center;
     margin-right: 29px;
-    transition: background-color 0.3s ease-in-out;
-}
-.banner__order-link:hover {
-    /*background-color: #ca025f;*/
-    /*background-color: #e60063;*/
-    background-color: #db005f;
-}
-.banner__order-link:active {
-    /*background-color: #ca025f;*/
-    background-color: #db005f;
 }
 .banner__order-region {
     color: #ffffff;
@@ -575,15 +579,6 @@ body {
 }
 .outside-print__ask-link {
     width: 171px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: #fb0275;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -591,15 +586,19 @@ body {
 }
 .outside-print__slider-wrap {
     position: relative;
+    max-width: 570px;
+    z-index: 1;
 }
 .print-slider__img {
     width: 570px;
     height: 460px;
+    overflow: hidden;
     position: relative;
-    z-index: 1;
+    /*z-index: 1;*/
     box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+    border-radius: 10px;
 }
-.print-slider__img::before {
+.outside-print__slider-wrap::before {
     display: block;
     content: "";
     width: 538px;
@@ -611,7 +610,7 @@ body {
     z-index: -1;
     border-radius: 10px;
 }
-.print-slider__img::after {
+.outside-print__slider-wrap::after {
     display: block;
     content: "";
     width: 499px;
@@ -634,23 +633,31 @@ body {
     position: absolute;
     bottom: 1px;
     left: 0;
-    width: 255px;
+    width: 225px;
     height: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.outside-print__slider-prev {
-    display: inline-block;
+.outside-print__slider-prev,
+.outside-print__slider-next {
+    display: block;
     background: url("../img/slide_arrow_left.svg") center center no-repeat;
     width: 91px;
     height: 15px;
-    margin-right: 39px;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 .outside-print__slider-next {
-    display: inline-block;
-    background: url("../img/slide_arrow_left.svg") center center no-repeat;
-    width: 91px;
-    height: 15px;
     transform: rotateZ(180deg);
-    padding: 10px 0;
+}
+.outside-print__slider-prev:active,
+.outside-print__slider-next:active {
+    position: relative;
+    top: 1px;
+}
+.slick-list {
+    overflow: visible;
 }
 /*----------------------------------------------Конец блока "main"-------------------------------------*/
