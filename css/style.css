@@ -66,6 +66,18 @@ input[type='radio'].visually-hidden {
 a {
     text-decoration: none;
 }
+a:active {
+    outline: none;
+    border: none;
+}
+a:visited {
+    outline: none;
+    border: none;
+}
+a:focus {
+    outline: none;
+    border: none;
+}
 p {
     margin: 0;
 }
@@ -90,7 +102,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', arial, sans-serif;
     /*background-color: #7f38bd;*/
-    background-color: yellow;
+    background-color: #7f38bd;
     font-size: 16px;
 }
 .section-title {
@@ -241,6 +253,18 @@ body {
     color: #7f38bd;
     background-color: #ffffff;
 }
+/*.header__wrap::after {*/
+    /*display: block;*/
+    /*content: "";*/
+    /*width: 15px;*/
+    /*height: 27px;*/
+    /*border-radius: 10px;*/
+    /*border: 2px solid #ffffff;*/
+    /*position: fixed;*/
+    /*top: 842px;*/
+    /*left: 579px;*/
+    /*z-index: 150;*/
+/*}*/
 /*----------------------------------------Конец блока "Header"------------------------*/
 
 /*----------------------------------------Начало блока "main"--------------------------------------------*/
@@ -303,6 +327,17 @@ body {
 .about {
     width: 100%;
     background-color: #ffffff;
+    position: relative;
+}
+.about__wrap::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -67px;
+    left: 583px;
+    width: 11px;
+    height: 130px;
+    background: url("../img/section_lines.svg") center center no-repeat;
 }
 .about__wrap {
     padding: 108px 15px 147px;
@@ -310,6 +345,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 .stages {
     width: 536px;
@@ -700,7 +736,7 @@ body {
     width: 100%;
     background-color: #ffffff;
 }
-.wide-print::after {
+.wide-print__wrap::before {
     content: "2";
     top: 56px;
     left: 649px;
@@ -1147,3 +1183,36 @@ body {
 /*------------------------Конец блока "contacts"------------------------*/
 
 /*----------------------------------------------Конец блока "main"-------------------------------------*/
+
+/*----------------------------------------------Начало блока "footer"-------------------------------------*/
+.footer {
+    width: 100%;
+    background-color: #65269d;
+}
+.footer__wrap {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    font-size: 0.8125rem;
+}
+.footer__copyright,
+.footer__privacy-link,
+.footer__design {
+    opacity: 0.7;
+}
+.footer__privacy-link {
+    text-decoration: underline;
+    transition: opacity 0.3s ease-in-out;
+}
+.footer__privacy-link:hover {
+    opacity: 1;
+}
+.footer__privacy-link:visited {
+    color: #ffffff;
+    opacity: 0.7;
+}
+/*----------------------------------------------Конец блока "footer"-------------------------------------*/
