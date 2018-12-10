@@ -17,19 +17,19 @@
             <nav class="header__menu">
                 <ul class="top-nav">
                     <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">О нас</a>
+                        <a class="top-nav__link" href="#about-section">О нас</a>
                     </li>
                     <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">Услуги</a>
+                        <a class="top-nav__link" href="#outside-print-subsection">Услуги</a>
                     </li>
                     <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">Отзывы</a>
+                        <a class="top-nav__link" href="#testimonials-section">Отзывы</a>
                     </li>
                     <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">FAQ</a>
+                        <a class="top-nav__link" href="#questions-section">FAQ</a>
                     </li>
                     <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">Контакты</a>
+                        <a class="top-nav__link" href="#contacts-section">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -41,7 +41,7 @@
     </header>
     <main>
         <h1 class="visually-hidden">Artactive</h1>
-        <div class="banner">
+        <div id="banner-section" class="banner">
             <div class="banner__wrap template-width">
                 <div class="banner__img">
                     <img src="img/img_banner.png">
@@ -54,15 +54,25 @@
                         Оперативная полиграфия<br> и&nbsp;широкоформатная печать<br> любого размера
                     </div>
                     <div class="banner__order-info">
-                        <a href="#" class="banner__order-link bright-btn">Заказать печать</a>
+                        <a href="#order-print" class="banner__order-link bright-btn">Заказать печать</a>
                         <span class="banner__order-region">
                             с&nbsp;доставкой по&nbsp;Ярославлю<br> и&nbsp;Ярославской области
                         </span>
                     </div>
                 </div>
             </div>
+            <div class="site-controls site-controls--banner">
+                <a href="#banner-section" class="site-controls__section-link active"></a>
+                <a href="#about-section" class="site-controls__section-link"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#testimonials-section" class="site-controls__section-link"></a>
+                <a href="#questions-section" class="site-controls__section-link"></a>
+                <a href="#contacts-section" class="site-controls__section-link"></a>
+            </div>
         </div>
-        <section class="about">
+        <section id="about-section" class="about">
             <div class="about__wrap template-width">
                 <div class="about__img stages">
                     <div class="stage__one">
@@ -175,8 +185,18 @@
                 </div>
 
             </div>
+            <div class="site-controls site-controls--about">
+                <a href="#banner-section" class="site-controls__section-link "></a>
+                <a href="#about-section" class="site-controls__section-link active"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#testimonials-section" class="site-controls__section-link"></a>
+                <a href="#questions-section" class="site-controls__section-link"></a>
+                <a href="#contacts-section" class="site-controls__section-link"></a>
+            </div>
         </section>
-        <section class="services">
+        <section id="outside-print-subsection" class="services">
             <div class="services__wrap template-width">
                 <h2 class="services__title section-title">2. Услуги</h2>
                 <div class="services__item outside-print">
@@ -195,7 +215,7 @@
                                 <span>Есть вопросы?</span>
                                 <span>Закажите консультацию</span>
                             </div>
-                            <a href="#" class="outside-print__ask-link bright-btn">Заказать</a>
+                            <a href="#order-print" class="outside-print__ask-link bright-btn">Заказать</a>
                         </div>
                     </div>
                     <div class="outside-print__slider-wrap">
@@ -232,8 +252,18 @@
                     </div>
                 </div>
             </div>
+            <div class="site-controls site-controls--outside-print">
+                <a href="#banner-section" class="site-controls__section-link "></a>
+                <a href="#about-section" class="site-controls__section-link active"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link active"></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#testimonials-section" class="site-controls__section-link"></a>
+                <a href="#questions-section" class="site-controls__section-link"></a>
+                <a href="#contacts-section" class="site-controls__section-link"></a>
+            </div>
         </section>
-        <div class="services__item wide-print">
+        <div id="wide-print-subsection" class="services__item wide-print">
             <div class="wide-print__wrap template-width">
                 <h3 class="wide-print__subtitle section__subtitle">Широкоформатная печать<br> для вашего интерьера</h3>
                 <div class="wide-print__descr">
@@ -243,10 +273,20 @@
                     и&nbsp;редактирование ваших фотографий силами наших дизайнеров:
                     композиции, фотоколлаж, ретушь, различные эффекты
                 </div>
-                <a href="#" class="wide-print__order bright-btn">Оставить заявку</a>
+                <a href="#order-print" class="wide-print__order bright-btn">Оставить заявку</a>
+            </div>
+            <div class="site-controls site-controls--wide-print">
+                <a href="#banner-section" class="site-controls__section-link "></a>
+                <a href="#about-section" class="site-controls__section-link active"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link active"></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link"></a>
+                <a href="#testimonials-section" class="site-controls__section-link"></a>
+                <a href="#questions-section" class="site-controls__section-link"></a>
+                <a href="#contacts-section" class="site-controls__section-link"></a>
             </div>
         </div>
-        <div class="services__item poligraph-print">
+        <div id="poligraph-print-subsection" class="services__item poligraph-print">
             <div class="poligraph-print__wrap template-width">
                 <h3 class="poligraph-print__subtitle section__subtitle">Оперативная полиграфия&nbsp;&mdash;<br> от&nbsp;визитки до&nbsp;баннера</h3>
                 <div class="poligraph-print__descr">
@@ -273,8 +313,18 @@
                     <button class="poligraph-print__form-submit bright-btn" name="poligraph-print__form-submit" type="submit">Отправить</button>
                 </form>
             </div>
+            <div class="site-controls site-controls--poligraph-print">
+                <a href="#banner-section" class="site-controls__section-link "></a>
+                <a href="#about-section" class="site-controls__section-link active"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link active"></a>
+                <a href="#testimonials-section" class="site-controls__section-link"></a>
+                <a href="#questions-section" class="site-controls__section-link"></a>
+                <a href="#contacts-section" class="site-controls__section-link"></a>
+            </div>
         </div>
-        <section class="testimonials">
+        <section id="testimonials-section" class="testimonials">
             <div class="testimonials__wrap template-width">
                 <h2 class="testimonials__title section-title">3. Отзывы</h2>
                 <div class="testimonials__slider-wrap">
@@ -361,8 +411,18 @@
                     </div>
                 </div>
             </div>
+            <div class="site-controls site-controls--testimonials">
+                <a href="#banner-section" class="site-controls__section-link "></a>
+                <a href="#about-section" class="site-controls__section-link"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#testimonials-section" class="site-controls__section-link active"></a>
+                <a href="#questions-section" class="site-controls__section-link"></a>
+                <a href="#contacts-section" class="site-controls__section-link"></a>
+            </div>
         </section>
-        <section class="questions">
+        <section id="questions-section" class="questions">
             <div class="questions__wrap template-width">
                 <h2 class="questions__title section-title">4. Частые вопросы (FAQ)</h2>
                 <div class="questions__items">
@@ -413,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="questions__request">
+                <div id="order-print" class="questions__request">
                     <div class="questions__label">
                         <span>Остались вопросы?</span>
                         <span>Оставьте заявку на консультацию</span>
@@ -425,9 +485,19 @@
                     </form>
                 </div>
             </div>
+            <div class="site-controls site-controls--questions">
+                <a href="#banner-section" class="site-controls__section-link "></a>
+                <a href="#about-section" class="site-controls__section-link"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#testimonials-section" class="site-controls__section-link "></a>
+                <a href="#questions-section" class="site-controls__section-link active"></a>
+                <a href="#contacts-section" class="site-controls__section-link"></a>
+            </div>
         </section>
-        <section class="contacts">
-            <!--<iframe src="https://yandex.ru/map-widget/v1/-/CBFsiYgvTD" frameborder="0" allowfullscreen>Ваш браузер не поддерживает фреймы, иначе была бы карта</iframe>-->
+        <section id="contacts-section" class="contacts">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBFsiYgvTD" frameborder="0" allowfullscreen>Ваш браузер не поддерживает фреймы, иначе была бы карта</iframe>
             <div class="contacts__wrap template-width">
                 <div class="contacts__info">
                     <h2 class="contacts__title section-title">5. Контакты</h2>
@@ -437,6 +507,16 @@
                         <a href="tel:+79201488131" class="contacts__phone">+7&nbsp;(920)&nbsp;148&nbsp;81&nbsp;31</a>
                     </div>
                 </div>
+            </div>
+            <div class="site-controls site-controls--contacts">
+                <a href="#banner-section" class="site-controls__section-link "></a>
+                <a href="#about-section" class="site-controls__section-link"></a>
+                <a href="#outside-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#wide-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#poligraph-print-subsection" class="site-controls__subsection-link "></a>
+                <a href="#testimonials-section" class="site-controls__section-link "></a>
+                <a href="#questions-section" class="site-controls__section-link "></a>
+                <a href="#contacts-section" class="site-controls__section-link active"></a>
             </div>
         </section>
     </main>
