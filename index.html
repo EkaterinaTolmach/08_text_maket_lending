@@ -1,13 +1,370 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lending_task</title>
+
+    <link rel="stylesheet" href="plagins/slick/slick.css">
+    <!--<link rel="stylesheet" href="plagins/slick/slick-theme.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__wrap template-width">
+            <div class="header__logo">Artactive</div>
+            <nav class="header__menu">
+                <ul class="top-nav">
+                    <li class="top-nav__item">
+                        <a class="top-nav__link" href="#">О нас</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a class="top-nav__link" href="#">Услуги</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a class="top-nav__link" href="#">Отзывы</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a class="top-nav__link" href="#">FAQ</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a class="top-nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__call call">
+                <a href="tel:+79201488131" class="call__link">+7&nbsp;(920)&nbsp;148&nbsp;81&nbsp;31</a>
+                <a href="#" class="call__order">Заказать звонок</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Artactive</h1>
+        <div class="banner">
+            <div class="banner__wrap template-width">
+                <div class="banner__img">
+                    <img src="img/img_banner.png">
+                </div>
+                <div class="banner__descr">
+                    <h2 class="banner__title">
+                        Размер<br> не&nbsp;имеет<br> значения!<br>
+                    </h2>
+                    <div class="banner__text">
+                        Оперативная полиграфия<br> и&nbsp;широкоформатная печать<br> любого размера
+                    </div>
+                    <div class="banner__order-info">
+                        <a href="#" class="banner__order-link bright-btn">Заказать печать</a>
+                        <span class="banner__order-region">
+                            с&nbsp;доставкой по&nbsp;Ярославлю<br> и&nbsp;Ярославской области
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="about">
+            <div class="about__wrap template-width">
+                <div class="about__img stages">
+                    <div class="stage__one">
+                        <div class="stage__img">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 512 512"  xml:space="preserve">
+                                <polygon fill="#FF405F" points="512,430.787 256,470.567 0,430.787 0,81.213 256,120.992 512,81.213 "></polygon>
+                                <polygon fill="#FB788A" points="0,81.213 0,430.787 256,470.567 256,120.992 "></polygon>
+                                <polygon fill="#FBBA00" points="256,73.265 51.144,41.433 51.144,385.213 256,417.045 460.856,385.213 460.856,41.433 "></polygon>
+                                <polygon fill="#FBDB80" points="51.144,41.433 51.144,385.213 256,417.046 256,73.265 "></polygon>
+                                <g>
+                                    <polygon fill="#FBBA00" points="97.361,207.408 209.782,224.956 209.782,193.23 97.361,175.682"></polygon>
+                                    <polygon fill="#FBBA00" points="97.361,117.843 97.361,149.569 209.782,167.117 209.782,135.39"></polygon>
+                                    <polygon fill="#FBBA00" points="97.361,265.247 209.782,282.796 209.782,251.07 97.361,233.521"></polygon>
+                                    <polygon fill="#FBBA00" points="97.361,323.088 209.782,340.636 209.782,308.909 97.361,291.361"></polygon>
+                                </g>
+                                <g>
+                                    <polygon fill="#F28E00" points="302.218,224.956 414.638,207.408 414.638,175.682 302.218,193.23"></polygon>
+                                    <polygon fill="#F28E00" points="302.218,282.796 414.638,265.247 414.638,233.521 302.218,251.07"></polygon>
+                                    <polygon fill="#F28E00" points="302.218,135.39 302.218,167.117 414.638,149.569 414.638,117.843"></polygon>
+                                    <polygon fill="#F28E00" points="302.218,340.636 414.638,323.088 414.638,291.361 302.218,308.909"></polygon>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="stage__descr">
+                            Приём и детальное<br>обсуждение заказа
+                        </span>
+                    </div>
+                    <div class="stage__two">
+                        <div class="stage__img">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve">
+                                <path fill="#FF405F" d="M473.8,8H28.1C12.6,8,0,20.5,0,36s12.6,28.1,28.1,28.1h445.7L512,36L473.8,8z"></path>
+                                <path fill="#FF405F" d="M256,8H28.1C12.6,8,0,20.5,0,36c0,15.5,12.6,28.1,28.1,28.1H256V8z"></path>
+                                <path fill="#0094E2" d="M512,469c0,19.3-15.7,35-35,35H35c-19.3,0-35-15.7-35-35V147c0-19.3,15.7-35,35-35h442c19.3,0,35,15.7,35,35 V469z"></path>
+                                <path fill="#0094E2" d="M256,112H35c-19.3,0-35,15.7-35,35v322c0,19.3,15.7,35,35,35h221V112z"></path>
+                                <rect x="115" y="177" fill="#E0E0E0" width="332" height="262"></rect>
+                                <g>
+                                    <rect x="115" y="177" fill="#F1F1F1" width="141" height="262"></rect>
+                                    <circle fill="#F1F1F1" cx="57.5" cy="308" r="22.2"></circle>
+                                    <rect x="35.3" y="230.6" fill="#F1F1F1" width="44.3" height="31.3"></rect>
+                                    <rect x="35.3" y="180.6" fill="#F1F1F1" width="44.3" height="31.3"></rect>
+                                    <rect x="35.3" y="404.1" fill="#F1F1F1" width="44.3" height="31.3"></rect>
+                                    <rect x="35.3" y="354.1" fill="#F1F1F1" width="44.3" height="31.3"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="stage__descr">
+                            Создание и согласование<br>дизайн-макета
+                        </span>
+                    </div>
+                    <div class="stage__three">
+                        <div class="stage__img">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+	 viewBox="0 0 512 512" xml:space="preserve">
+                                <polygon fill="#9AD7FF" points="100.175,0 200.349,411.905 414.938,411.905 512,314.844 512,0 "></polygon>
+                                <path fill="#4EB9FF" d="M0,100.095c0,0,0,256.53,0,311.81C0,467.187,44.815,512,100.095,512 c55.281,0,100.095-44.813,100.095-100.095c0-55.28,0-311.81,0-311.81H0z"></path>
+                                <circle fill="#C2E7FF" cx="100.095" cy="100.095" r="100.095"></circle>
+                                <circle fill="#4EB9FF" cx="100.095" cy="100.095" r="58.844"></circle>
+                                <circle fill="#174461" cx="100.095" cy="100.095" r="18.199"></circle>
+                                <polygon fill="#C2E7FF" points="414.938,314.844 414.938,411.905 512,314.844 "></polygon>
+                            </svg>
+                        </div>
+                        <span class="stage__descr">
+                            Печать и постпечатная<br>обработка изделий<br>любых размеров
+                        </span>
+                    </div>
+                    <div class="stage__four">
+                        <div class="stage__img">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve">
 
+                                <path class="st0" fill="#68EDFF" d="M497,421.9H319c-8.3,0-15-6.7-15-15v-178c0-8.3,6.7-15,15-15h86.1c4,0,7.8,1.6,10.6,4.4l91.9,91.9 c2.8,2.8,4.4,6.6,4.4,10.6v86.1C512,415.2,505.3,421.9,497,421.9z"></path>
+                                <path class="st1" fill="#00A3FF" d="M304,320.8v86.1c0,8.3,6.7,15,15,15h178c8.3,0,15-6.7,15-15v-86.1c0,0,0,0,0,0H304z"></path>
+                                <path class="st2" fill="#FFDC3E" d="M167,155.6l159.8-0.4c0.1,0,0.2,0,0.3,0.1c4.3,2.8,6.9,7.5,6.9,12.6v253.9h0H15.6c-8.6,0-15.6-7-15.6-15.6V168 c0-5.1,2.6-9.9,6.9-12.6c0.1-0.1,0.2-0.1,0.3-0.1L167,155.6c0.1,0-7.9,0.3-7.8,0.2"></path>
+                                <path class="st3" fill="#FFAE23" d="M167,155.6v266.3h167V168c0-5.2-2.7-10-7-12.7"></path>
+                                <g>
+                                    <path class="st4" fill="#2C3C7E" d="M408,454.4c-26.2,0-47.5-21.3-47.5-47.5c0-26.2,21.3-47.5,47.5-47.5s47.5,21.3,47.5,47.5 C455.5,433.1,434.2,454.4,408,454.4z"></path>
+                                    <path class="st4" fill="#2C3C7E" d="M154.5,454.4c-26.2,0-47.5-21.3-47.5-47.5c0-26.2,21.3-47.5,47.5-47.5s47.5,21.3,47.5,47.5 C202,433.1,180.7,454.4,154.5,454.4z"></path>
+                                </g>
+                                <path class="st5" fill="#17CEFF" d="M202.5,325.7h-71c-8.3,0-15-6.7-15-15v-71c0-8.3,6.7-15,15-15h71c8.3,0,15,6.7,15,15v71 C217.5,319,210.8,325.7,202.5,325.7z"></path>
+                                <path class="st1" fill="#00A3FF" d="M202.5,224.7H167v101h35.5c8.3,0,15-6.7,15-15v-71C217.5,231.5,210.8,224.7,202.5,224.7z"></path>
+                            </svg>
+                        </div>
+                        <span class="stage__descr">Доставка готовой<br>продукции</span>
+                    </div>
+                    <div class="stage__lines">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="355.5px" height="300.5px">
+                            <path id="pink_line" fill-rule="evenodd"  stroke="rgb(214, 149, 179)" stroke-width="1px" stroke-dasharray="4, 2" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.722" fill="none"
+                                  d="M182.500,0.500 C182.500,0.500 243.500,9.500 294.500,43.499 C341.398,74.765 355.879,96.352 353.500,131.499 C350.346,178.100 262.261,196.525 172.500,146.499 C64.866,86.512 -2.861,139.290 2.500,161.499 C9.500,190.499 17.500,216.323 92.500,227.499 C167.370,238.656 175.500,298.499 175.500,298.499 "></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about__descr">
+                    <h2 class="about__title section-title">1. О нас</h2>
+                    <h3 class="about__subtitle section__subtitle">Полный спектр услуг&nbsp;&mdash;<br>от&nbsp;дизайна до&nbsp;печати</h3>
+                    <div class="about__text">
+                        <p>
+                            К&nbsp;вашим услугам мы&nbsp;предлагаем полный спектр работ,
+                            начиная от&nbsp;печати открыток, чертежей, баннеров, растяжек,
+                            создания буклетов и&nbsp;эксклюзивных календарей, и&nbsp;заканчивая постпечатной обработкой.
+                        </p>
+                        <p>
+                            В&nbsp;копицентре не&nbsp;просто предоставляют услуги печати:
+                            мы&nbsp;ориентируемся на&nbsp;комплексное обслуживание. Все услуги, будь&nbsp;то
+                            оперативная цифровая печать открыток или разработка серии календарей,
+                            Вы&nbsp;можете получить в&nbsp;одном месте, воспользовавшись сопутствующими услугами копицентра.
+                        </p>
+                        <p>При этом работа выполняется в&nbsp;максимально сжатые сроки
+                            и&nbsp;не&nbsp;в&nbsp;ущерб качеству конечного результата,
+                            которое неизменно остается на&nbsp;высоте.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__wrap template-width">
+                <h2 class="services__title section-title">2. Услуги</h2>
+                <div class="services__item outside-print">
+                    <div class="outside-print__descr">
+                        <h3 class="outside-print__subtitle section__subtitle">Широкоформатная печать<br>баннеров, растяжек, афиш</h3>
+                        <ul class="outside-print__list">
+                            <li class="outside-print__list-item">подготовка макетов к печати, дизайн рекламных баннеров</li>
+                            <li class="outside-print__list-item">срочная печать за 3 часа</li>
+                            <li class="outside-print__list-item">проварка карманов и сварка нескольких изображений</li>
+                            <li class="outside-print__list-item">пробивка люверсов и вварка монтажных тросов</li>
+                            <li class="outside-print__list-item">изготовление цветопробы</li>
+                            <li class="outside-print__list-item">доставка баннеров</li>
+                        </ul>
+                        <div class="outside-print__ask">
+                            <div class="outside-print__label">
+                                <span>Есть вопросы?</span>
+                                <span>Закажите консультацию</span>
+                            </div>
+                            <a href="#" class="outside-print__ask-link bright-btn">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="outside-print__slider-wrap">
+                        <div class="print-slider">
+                            <div class="print-slider__item">
+                                <div class="print-slider__img">
+                                    <img src="img/slide.png" alt="slide" title="slide">
+                                </div>
+                                <div class="print-slider__text">
+                                    Растяжка на&nbsp;ул.&nbsp;Ленина
+                                </div>
+                            </div>
+                            <div class="print-slider__item">
+                                <div class="print-slider__img">
+                                    <img src="img/slide2.jpg" alt="slide" title="slide">
+                                </div>
+                                <div class="print-slider__text">
+                                    Растяжка на&nbsp;ул.&nbsp;Пушкина
+                                </div>
+                            </div>
+                            <div class="print-slider__item">
+                                <div class="print-slider__img">
+                                    <img src="img/slide3.jpg" alt="slide" title="slide">
+                                </div>
+                                <div class="print-slider__text">
+                                    Растяжка на&nbsp;ул.&nbsp;Урицкого
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outside-print__slider-controls">
+                            <!--<a href="#" class="outside-print__slider-prev"></a>-->
+                            <!--<a href="#" class="outside-print__slider-next"></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="services__item wide-print">
+            <div class="wide-print__wrap template-width">
+                <h3 class="wide-print__subtitle section__subtitle">Широкоформатная печать<br> для вашего интерьера</h3>
+                <div class="wide-print__descr">
+                    Печатаем широкоформатные фотографии на&nbsp;глянцевой и&nbsp;матовой фотобумаге
+                    разной плотности, на&nbsp;глянцевом и&nbsp;матовом холсте или
+                    на&nbsp;самоклеющейся пленке. Также можем предложить обработку
+                    и&nbsp;редактирование ваших фотографий силами наших дизайнеров:
+                    композиции, фотоколлаж, ретушь, различные эффекты
+                </div>
+                <a href="#" class="wide-print__order bright-btn">Оставить заявку</a>
+            </div>
+        </div>
+        <div class="services__item poligraph-print">
+            <div class="poligraph-print__wrap template-width">
+                <h3 class="poligraph-print__subtitle section__subtitle">Оперативная полиграфия&nbsp;&mdash;<br> от&nbsp;визитки до&nbsp;баннера</h3>
+                <div class="poligraph-print__descr">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+                        magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat.
+                        Duis aute irure dolor in&nbsp;reprehenderit in&nbsp;voluptate velit esse
+                        cillum dolore eu&nbsp;fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in&nbsp;culpa qui
+                        officia deserunt mollit anim id&nbsp;est laborum. Sed ut&nbsp;perspiciatis
+                        unde omnis iste natus error.
+                    </p>
+                </div>
+                <form class="poligraph-print__ask-form" name="ask__form" method="post" action="#" enctype="text/plain">
+                    <div class="poligraph-print__form-label">
+                        <span>Есть вопросы?</span>
+                        <span>Оставьте заявку на консультацию</span>
+                    </div>
+                    <input class="poligraph-print__name-field" type="text" name="name-field" placeholder="Имя">
+                    <input class="poligraph-print__phone-field" name="phone-field" type="tel" placeholder="Телефон">
+                    <button class="poligraph-print__form-submit bright-btn" name="poligraph-print__form-submit" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <section class="testimonials">
+            <div class="testimonials__wrap template-width">
+                <h2 class="testimonials__title section-title">3. Отзывы</h2>
+                <div class="testimonials__slider-wrap">
+                    <div class="testimonials-slider">
+                        <div class="testimonials-slider__item">
+                            <div class="testimonials-slider__img">
+                                <img src="img/user1.png" alt="user-photo" title="user-photo">
+                            </div>
+                            <div class="testimonials-slider__descr">
+                                <div class="testimonials-slider__text">
+                                    Обратился в&nbsp;компанию АртАктив за&nbsp;визитками.
+                                    Это мой первый опыт, поэтому немного нервничал, не&nbsp;знал,
+                                    с&nbsp;чего начать. Остался доволен, потому что мне всё объяснили,
+                                    показали и&nbsp;сделали по&nbsp;высшему разряду. Советую!
+                                </div>
+                                <div class="testimonials-slider__author">Александров Максим, 24&nbsp;года</div>
+                                <a href="#" class="testimonials-slider__link">vk.com/mr.sharp</a>
+                            </div>
+                        </div>
+                        <div class="testimonials-slider__item">
+                            <div class="testimonials-slider__img">
+                                <img src="img/user2.png" alt="user-photo" title="user-photo">
+                            </div>
+                            <div class="testimonials-slider__descr">
+                                <div class="testimonials-slider__text">
+                                    Обратился в&nbsp;компанию АртАктив за&nbsp;визитками.
+                                    Это мой первый опыт, поэтому немного нервничал, не&nbsp;знал,
+                                    с&nbsp;чего начать. Остался доволен, потому что мне всё объяснили,
+                                    показали и&nbsp;сделали по&nbsp;высшему разряду. Советую!
+                                </div>
+                                <div class="testimonials-slider__author">Александров Максим, 24&nbsp;года</div>
+                                <a href="#" class="testimonials-slider__link">vk.com/mr.sharp</a>
+                            </div>
+                        </div>
+                        <div class="testimonials-slider__item">
+                            <div class="testimonials-slider__img">
+                                <img src="img/user3.jpg" alt="user-photo" title="user-photo">
+                            </div>
+                            <div class="testimonials-slider__descr">
+                                <div class="testimonials-slider__text">
+                                    Обратился в&nbsp;компанию АртАктив за&nbsp;визитками.
+                                    Это мой первый опыт, поэтому немного нервничал, не&nbsp;знал,
+                                    с&nbsp;чего начать. Остался доволен, потому что мне всё объяснили,
+                                    показали и&nbsp;сделали по&nbsp;высшему разряду. Советую!
+                                </div>
+                                <div class="testimonials-slider__author">Александров Максим, 24&nbsp;года</div>
+                                <a href="#" class="testimonials-slider__link">vk.com/mr.sharp</a>
+                            </div>
+                        </div>
+                        <div class="testimonials-slider__item">
+                            <div class="testimonials-slider__img">
+                                <img src="img/user4.jpg" alt="user-photo" title="user-photo">
+                            </div>
+                            <div class="testimonials-slider__descr">
+                                <div class="testimonials-slider__text">
+                                    Обратился в&nbsp;компанию АртАктив за&nbsp;визитками.
+                                    Это мой первый опыт, поэтому немного нервничал, не&nbsp;знал,
+                                    с&nbsp;чего начать. Остался доволен, потому что мне всё объяснили,
+                                    показали и&nbsp;сделали по&nbsp;высшему разряду. Советую!
+                                </div>
+                                <div class="testimonials-slider__author">Александров Максим, 24&nbsp;года</div>
+                                <a href="#" class="testimonials-slider__link">vk.com/mr.sharp</a>
+                            </div>
+                        </div>
+                        <div class="testimonials-slider__item">
+                            <div class="testimonials-slider__img">
+                                <img src="img/user5.jpg" alt="user-photo" title="user-photo">
+                            </div>
+                            <div class="testimonials-slider__descr">
+                                <div class="testimonials-slider__text">
+                                    Обратился в&nbsp;компанию АртАктив за&nbsp;визитками.
+                                    Это мой первый опыт, поэтому немного нервничал, не&nbsp;знал,
+                                    с&nbsp;чего начать. Остался доволен, потому что мне всё объяснили,
+                                    показали и&nbsp;сделали по&nbsp;высшему разряду. Советую!
+                                </div>
+                                <div class="testimonials-slider__author">Александров Максим, 24&nbsp;года</div>
+                                <a href="#" class="testimonials-slider__link">vk.com/mr.sharp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__slider-controls">
+                        <!--<a href="#" class="testimonials__slider-prev"></a>-->
+                        <!--<a href="#" class="testimonials__slider-next"></a>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="plagins/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
