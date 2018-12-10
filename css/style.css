@@ -1070,4 +1070,80 @@ body {
 }
 /*------------------------Конец блока "questions"------------------------*/
 
+/*------------------------Начало блока "contacts"------------------------*/
+.contacts {
+    width: 100%;
+    /*overflow: hidden;*/
+    position: relative;
+    z-index: 1;
+}
+.contacts iframe {
+    width: 100%;
+    height: 653px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.contacts__wrap {
+    padding: 121px 15px 149px;
+    z-index: 2;
+}
+.contacts__info {
+    max-width: 458px;
+    background-color: #ffffff;
+    padding: 86px 102px 116px 86px;
+    border-radius: 10px;
+}
+.contacts__title {
+    margin-bottom: 51px;
+}
+.contacts__list span,
+.contacts__list a {
+    display: block;
+    color: #5e606a;
+    font-size: 0.875rem;
+    margin-bottom: 21px;
+    padding-left: 29px;
+    position: relative;
+}
+.contacts__list a:last-child {
+    margin-bottom: 0;
+}
+.contacts__address::before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 18px;
+    background: url("../img/ico-tag.svg") center center no-repeat;
+    background-size: contain;
+}
+.contacts__email::before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    display: block;
+    content: "";
+    width: 14px;
+    height: 11px;
+    background: url("../img/ico_mail.svg") center center no-repeat;
+    background-size: contain;
+}
+.contacts__phone::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 16px;
+    background: url("../img/ico_phone.svg") center center no-repeat;
+    background-size: contain;
+}
+/*------------------------Конец блока "contacts"------------------------*/
+
 /*----------------------------------------------Конец блока "main"-------------------------------------*/
