@@ -1162,6 +1162,7 @@ body {
     width: 11px;
     height: 130px;
     background: url("../img/section_lines.svg") center center no-repeat;
+    z-index: 2;
 }
 .questions__title {
     margin-bottom: 59px;
