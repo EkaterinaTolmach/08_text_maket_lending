@@ -15,6 +15,13 @@
         <div class="header__wrap template-width">
             <div class="header__logo">Artactive</div>
             <nav class="header__menu">
+                <input id="burger__checkbox" class="header__menu-checkbox" type="checkbox" name="burger__checkbox">
+                    <label for="burger__checkbox" class="burger">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </label>
                 <ul class="top-nav">
                     <li class="top-nav__item">
                         <a class="top-nav__link" href="#about-section">О нас</a>
@@ -37,6 +44,7 @@
                 <a href="tel:+79201488131" class="call__link">+7&nbsp;(920)&nbsp;148&nbsp;81&nbsp;31</a>
                 <a href="#" class="call__order">Заказать звонок</a>
             </div>
+
         </div>
     </header>
     <main>
@@ -72,8 +80,29 @@
                 <a href="#contacts-section" class="site-controls__section-link"></a>
             </div>
         </div>
-        <section id="about-section" class="about">
-            <div class="about__wrap template-width">
+        <section id="about-section" class="about ">
+            <div class="about__wrap template-width clear-fix">
+
+                <div class="about__descr">
+                    <h2 class="about__title section-title">1. О нас</h2>
+                    <h3 class="about__subtitle section__subtitle">Полный спектр услуг&nbsp;&mdash; от&nbsp;дизайна до&nbsp;печати</h3>
+                    <div class="about__text">
+                        <p>
+                            К&nbsp;вашим услугам мы&nbsp;предлагаем полный спектр работ,
+                            начиная от&nbsp;печати открыток, чертежей, баннеров, растяжек,
+                            создания буклетов и&nbsp;эксклюзивных календарей, и&nbsp;заканчивая постпечатной обработкой.
+                        </p>
+                        <p>
+                            В&nbsp;копицентре не&nbsp;просто предоставляют услуги печати:
+                            мы&nbsp;ориентируемся на&nbsp;комплексное обслуживание. Все услуги, будь&nbsp;то
+                            оперативная цифровая печать открыток или разработка серии календарей,
+                            Вы&nbsp;можете получить в&nbsp;одном месте, воспользовавшись сопутствующими услугами копицентра.
+                        </p>
+                        <p>При этом работа выполняется в&nbsp;максимально сжатые сроки
+                            и&nbsp;не&nbsp;в&nbsp;ущерб качеству конечного результата,
+                            которое неизменно остается на&nbsp;высоте.</p>
+                    </div>
+                </div>
                 <div class="about__img stages">
                     <div class="stage__one">
                         <div class="stage__img">
@@ -163,27 +192,6 @@
                         </svg>
                     </div>
                 </div>
-                <div class="about__descr">
-                    <h2 class="about__title section-title">1. О нас</h2>
-                    <h3 class="about__subtitle section__subtitle">Полный спектр услуг&nbsp;&mdash;<br>от&nbsp;дизайна до&nbsp;печати</h3>
-                    <div class="about__text">
-                        <p>
-                            К&nbsp;вашим услугам мы&nbsp;предлагаем полный спектр работ,
-                            начиная от&nbsp;печати открыток, чертежей, баннеров, растяжек,
-                            создания буклетов и&nbsp;эксклюзивных календарей, и&nbsp;заканчивая постпечатной обработкой.
-                        </p>
-                        <p>
-                            В&nbsp;копицентре не&nbsp;просто предоставляют услуги печати:
-                            мы&nbsp;ориентируемся на&nbsp;комплексное обслуживание. Все услуги, будь&nbsp;то
-                            оперативная цифровая печать открыток или разработка серии календарей,
-                            Вы&nbsp;можете получить в&nbsp;одном месте, воспользовавшись сопутствующими услугами копицентра.
-                        </p>
-                        <p>При этом работа выполняется в&nbsp;максимально сжатые сроки
-                            и&nbsp;не&nbsp;в&nbsp;ущерб качеству конечного результата,
-                            которое неизменно остается на&nbsp;высоте.</p>
-                    </div>
-                </div>
-
             </div>
             <div class="site-controls site-controls--about">
                 <a href="#banner-section" class="site-controls__section-link "></a>
@@ -533,6 +541,7 @@
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="plagins/slick/slick.min.js"></script>
+    <script src="js/script-line.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
